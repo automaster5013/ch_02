@@ -9,8 +9,8 @@ for xlsx_path in Path(IN_DIR).glob("2024년*월.xlsx"):
     result.append(df_raw)
 result
 
-# df_concat = pd.concat(result)
-# df_concat.to_excel(OUT_DIR / f"{Path(__file__).stem}.xlsx", index=False)
+df_concat = pd.concat(result)
+df_concat.to_excel(OUT_DIR / f"{Path(__file__).stem}.xlsx", index=False)
 
 #################################################(데이터_취합1_취합2_소스코드)
 
